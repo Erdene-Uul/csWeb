@@ -44,7 +44,7 @@ export const Footer = () => {
                 onClick={Reg}
                 className="hover:text-[15px] hover:text-sky-600 hover:border-b-[1px]"
               >
-                Онлайнаар бүртгүүлэх бол ЭНД дарна уу
+                Онлайнаар бүртгүүлэх бол энд дарна уу!
               </button>
             </div>
           </div>

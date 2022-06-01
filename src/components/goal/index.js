@@ -14,7 +14,7 @@ export default function Goals() {
           бодит хувь нэмэр оруулахад чиглэсэн чанартай, үр ашигтай бодит
           үйлчилгээ үзүүлэх явдал мөн.
         </p>
-        <img className="mt-16" src={card} />
+        <img style={{ pointerEvents: "none" }} className="mt-16" src={card} />
       </div>
     </div>
   );

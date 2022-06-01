@@ -2,6 +2,7 @@ import Home from "./pages/home";
 import { Route, Routes } from "react-router-dom";
 import { useState } from "react";
 import OnePost from "./components/news/OnePost";
+
 function App() {
   const [sideBar, showSideBar] = useState(false);
   const toggleSideBar = () => {

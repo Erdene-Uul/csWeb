@@ -7,7 +7,7 @@ export const Footer = () => {
     window.open("https://elselt.huree.edu.mn/register.php", "_blank");
   };
   return (
-    <div className="flex max-w-screen-2xl mx-auto">
+    <div className="flex max-w-screen-2xl mx-auto" id="footer">
       <div className="w-1/2 flex justify-center items-center">
         <iframe
           className="w-2/3 h-3/4"

@@ -8,7 +8,10 @@ import {
 
 export default function AboutUs() {
   return (
-    <div className="flex flex-col items-center max-w-6xl mx-auto lg:my-24 ">
+    <div
+      className="flex flex-col items-center max-w-6xl mx-auto lg:my-24 "
+      id="about"
+    >
       <div className="font-bold lg:text-4xl">
         Бидний <span className="text-[#49B3FF]">тухай</span>
       </div>

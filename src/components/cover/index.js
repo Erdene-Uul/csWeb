@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../header";
 import students from "../../assets/images/Rectangle 4422.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link } from "react-scroll";
 import {
   faEnvelope,
   faPhone,
@@ -18,8 +19,11 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 export default function Cover(props) {
+  const Reg = () => {
+    window.open("https://www.facebook.com/huree.university/", "_blank");
+  };
   return (
-    <div className="lg:flex max-w-screen-2xl mx-auto shadow-lg">
+    <div className="lg:flex max-w-screen-2xl mx-auto shadow-lg" id="home">
       <div className="2xl:h-[795px] xl:h-[670px] lg:h-[620px] lg:w-2/3 bg-[#153690]">
         <div className="lg:ml-8 xl:mr-[150px] lg:mr-[60px]  lg:pt-8">
           <Header sideBar={props.sideBar} toggleSideBar={props.toggleSideBar} />
@@ -83,7 +87,9 @@ export default function Cover(props) {
           </ul>
           <ul className="flex space-x-4">
             <li>
-              <FontAwesomeIcon icon={faFacebook} className="text-xl" />
+              <button onClick={Reg}>
+                <FontAwesomeIcon icon={faFacebook} className="text-xl" />
+              </button>
             </li>
             <li>
               <FontAwesomeIcon icon={faTwitter} className="text-xl" />
@@ -102,11 +108,19 @@ export default function Cover(props) {
             Хасбаатрын гудамж, 11-р хороо, Бичил хороолол,
             <br /> Баянгол дүүрэг, Улаанбаатар, Монгол улс.
           </span>
-          <FontAwesomeIcon
-            icon={faLocationDot}
-            color="#777181"
-            className="text-3xl"
-          />
+          <Link
+            activeClass="active"
+            to="footer"
+            spy={true}
+            smooth={true}
+            duration={500}
+          >
+            <FontAwesomeIcon
+              icon={faLocationDot}
+              color="#777181"
+              className="text-3xl"
+            />
+          </Link>
         </div>
       </div>
     </div>

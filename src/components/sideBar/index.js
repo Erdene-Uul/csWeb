@@ -3,6 +3,8 @@ import Shadow from "../Shadow";
 import Logo from "../../assets/images/image 47.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faClose } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-scroll";
+
 export default function SideBar(props) {
   return (
     <div>
@@ -23,9 +25,45 @@ export default function SideBar(props) {
         </div>
         <div className="w-4/5 h-[2px] bg-black mx-auto mt-2 "></div>
         <ul className="w-4/5 mx-auto my-3 text-sm space-y-2">
-          <li>Нүүр</li>
-          <li>Танилцуулга</li>
-          <li>Үйл ажиллагаа</li>
+          <li>
+            <Link
+              onClick={props.close}
+              activeClass="active"
+              to="home"
+              spy={true}
+              smooth={true}
+              duration={500}
+              className="text-black"
+            >
+              Нүүр
+            </Link>
+          </li>
+          <li>
+            <Link
+              onClick={props.close}
+              activeClass="active"
+              to="about"
+              spy={true}
+              smooth={true}
+              duration={500}
+              className="text-black"
+            >
+              Танилцуулагa
+            </Link>
+          </li>
+          <li>
+            <Link
+              onClick={props.close}
+              activeClass="active"
+              to="goal"
+              spy={true}
+              smooth={true}
+              duration={500}
+              className="text-black"
+            >
+              Үйл ажиллагаа
+            </Link>
+          </li>
         </ul>
         <div className="w-4/5 h-[2px] bg-black mx-auto mt-2 "></div>
       </div>

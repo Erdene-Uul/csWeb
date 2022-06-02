@@ -2,6 +2,7 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import SideBar from "../sideBar";
+import { Link } from "react-scroll";
 
 import Logo from "../../assets/images/image 47.png";
 export default function Header(props) {
@@ -16,9 +17,42 @@ export default function Header(props) {
       </div>
       <div className="hidden lg:block ">
         <ul className="flex text-white space-x-12 ">
-          <li>Нүүр</li>
-          <li>Танилцуулга</li>
-          <li>Үйл ажиллагаа</li>
+          <li className="cursor-pointer">
+            <Link
+              activeClass="active"
+              to="home"
+              spy={true}
+              smooth={true}
+              duration={500}
+              className="text-white"
+            >
+              Нүүр
+            </Link>
+          </li>
+          <li className="cursor-pointer">
+            <Link
+              activeClass="active"
+              to="about"
+              spy={true}
+              smooth={true}
+              duration={500}
+              className="text-white"
+            >
+              Танилцуулагa
+            </Link>
+          </li>
+          <li className="cursor-pointer ">
+            <Link
+              activeClass="active"
+              to="goal"
+              spy={true}
+              smooth={true}
+              duration={500}
+              className="text-white"
+            >
+              Үйл ажиллагаа
+            </Link>
+          </li>
         </ul>
       </div>
       <div className="lg:hidden">

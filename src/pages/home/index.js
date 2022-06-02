@@ -3,7 +3,6 @@ import AboutUs from "../../components/aboutUs";
 import Goals from "../../components/goal";
 import CommonQuestions from "../../components/CommonQuestions";
 import AllPost from "../../components/news/AllPost";
-import { Footer } from "../../components/footer";
 import Comments from "../../components/comments";
 
 const Home = (props) => {
@@ -26,7 +25,6 @@ const Home = (props) => {
         </button>
       </div>
       <AllPost />
-      <Footer />
     </div>
   );
 };

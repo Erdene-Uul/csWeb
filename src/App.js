@@ -2,7 +2,7 @@ import Home from "./pages/home";
 import { Route, Routes } from "react-router-dom";
 import { useState } from "react";
 import OnePost from "./components/news/OnePost";
-
+import { Footer } from "./components/footer";
 function App() {
   const [sideBar, showSideBar] = useState(false);
   const toggleSideBar = () => {
@@ -18,6 +18,7 @@ function App() {
         />
         <Route exact path="/:slug" element={<OnePost />} />
       </Routes>
+      <Footer />
     </div>
   );
 }

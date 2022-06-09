@@ -28,6 +28,7 @@ const OnePost = () => {
       )
       .then((data) => setPostData(data[0]))
       .catch(console.error);
+    window.scrollTo(0, 0);
   }, [slug]);
 
   return (

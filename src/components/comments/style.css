@@ -1,0 +1,50 @@
+.slick-prev,
+.slick-next
+{
+    font-size: 0;
+    line-height: 0;
+
+    position: absolute;
+    top: 50%;
+
+    display: block;
+
+    width: 20px;
+    height: 20px;
+    
+   
+}
+.slick-prev:before,
+.slick-next:before
+{
+    font-size: 40px !important;
+    line-height: 1;
+   
+    opacity: .75;
+    color: #2A35A7 !important;
+
+    
+}
+.slick-next:before
+{
+    content: '→';
+    
+}
+.slick-prev
+{
+    left: -80px;
+}
+[dir='rtl'] .slick-prev
+{
+    right: -80px;
+    left: auto;
+}
+.slick-next
+{
+    right: -60px;
+}
+[dir='rtl'] .slick-next
+{
+    right: auto;
+    left: -60px;
+}

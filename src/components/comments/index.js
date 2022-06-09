@@ -2,6 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import { Card } from "antd";
 import { Rate } from "antd";
+import "./style.css";
 const Comments = () => {
   const comments = [
     {
@@ -12,12 +13,12 @@ const Comments = () => {
     {
       star: 4,
       body: "  Хүрээ МХТДС-ыг 2010 онд төгсөөд одоо АНУ-ын Google компанид software инженээрээр ажиллаж байна. Сургуулийн нийт багш нартаа баяраллаа. Оюутан залуучууддаа амжилт.",
-      name: "Ү.Батбаатар (IC тэнхим төгсөгч)",
+      name: "Ү.Батбаатар (CS тэнхим төгсөгч)",
     },
     {
-      star: 3,
+      star: 4,
       body: "  Хүрээ МХТДС-ыг 2010 онд төгсөөд одоо АНУ-ын Google компанид software инженээрээр ажиллаж байна. Сургуулийн нийт багш нартаа баяраллаа. Оюутан залуучууддаа амжилт.",
-      name: "З.Цогоо (MM тэнхим төгсөгч)",
+      name: "З.Цогоо (CS тэнхим төгсөгч)",
     },
   ];
   return (

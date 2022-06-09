@@ -23,15 +23,17 @@ export default function Cover(props) {
     window.open("https://www.facebook.com/huree.university/", "_blank");
   };
   return (
-    <div className="lg:flex max-w-screen-2xl mx-auto shadow-lg" id="home">
-      <div className="2xl:h-[795px] xl:h-[670px] lg:h-[620px] lg:w-2/3 bg-[#153690]">
+    <div className="md:flex max-w-screen-2xl mx-auto shadow-lg" id="home">
+      <div className="2xl:h-[795px] xl:h-[670px] lg:h-[620px]  md:w-2/3 w-full  h-[400px] bg-[#153690]">
         <div className="lg:ml-8 xl:mr-[150px] lg:mr-[60px]  lg:pt-8">
           <Header sideBar={props.sideBar} toggleSideBar={props.toggleSideBar} />
         </div>
-        <div className=" flex  w-full h-full   text-white  relative">
-          <div className="absolute top-48 left-32">
-            <div className=" text-3xl">
-              <span className="lg:text-7xl font-bold text-sm block">ХҮРЭЭ</span>
+        <div className=" flex w-full h-full justify-center   text-white  relative">
+          <div className="absolute 2xl:top-48 lg:top-20 2xl:left-32 lg:left-16 lg:p-0 p-5 lg:max-w-none max-w-xs ">
+            <div className=" lg:text-3xl text-lg">
+              <span className="lg:text-7xl  font-bold text-3xl block">
+                ХҮРЭЭ
+              </span>
               <span className="text-[#49B3FF]">ПРОГРАМ ХАНГАМЖ</span> ТЭНХИМ
             </div>
 
@@ -39,12 +41,12 @@ export default function Cover(props) {
               Бид бүхэн шинийг эрэлхийлж, шинэлэг зүйл сорьж шилдэгийн шилдэг
               залуу компьютерийн инженерүүдийг бэлтгэж байна
             </p>
-            <div className="flex justify-around text-5xl mt-12">
+            <div className="flex justify-around xl:text-5xl lg:text-4xl text-lg mt-12">
               {" "}
-              <div className="flex flex-col items-center space-y-2">
+              <div className="flex flex-col items-center lg:space-y-2 space-y-1">
                 <FontAwesomeIcon icon={faBuildingColumns} />
                 <p className="mb-0 text-xs">2002</p>
-                <p className="mb-0 text-xs">Үүссэн</p>
+                <p className="mb-0 text-xs ">Үүссэн</p>
               </div>
               <div className="flex flex-col items-center space-y-2">
                 <FontAwesomeIcon icon={faUsersLine} />
@@ -61,11 +63,11 @@ export default function Cover(props) {
             </div>
           </div>
         </div>
-        <div className=" rounded-full hidden lg:block absolute top-64 2xl:right-80 xl:right-64 xl:h-[450px] lg:h-[400px] lg:right-52  2xl:h-[600px]">
+        <div className=" rounded-full hidden lg:block absolute top-64 2xl:right-64 xl:right-64 xl:h-[450px] lg:h-[400px] right-40  2xl:h-[600px]">
           <img className="h-full" src={students} alt="students" />
         </div>
       </div>
-      <div className="hidden lg:block w-1/3 text-xs">
+      <div className="hidden md:block w-1/3 text-xs overflow-auto">
         <div className="flex justify-around items-center mt-3 ">
           <ul className="flex space-x-4  ">
             <li className="flex items-center">
